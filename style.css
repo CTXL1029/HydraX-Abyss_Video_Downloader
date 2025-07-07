@@ -1,0 +1,114 @@
+body {
+    font-family: "Mulish", system-ui; /* Made by Google Gemini and fixed by @CTXL1029 */
+    width: 300px;
+    padding: 15px;
+    background-color: #282a2c; /* Màu nền web */
+    color: #f0f0f0; /* Màu chữ trắng/xám nhạt cho dễ đọc */
+    margin: 0;
+}
+
+h2 {
+    color: #f0f0f0;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-label {
+font-size: 16px; /* Hoặc 16px, 18px, v.v. tùy theo kích thước bạn muốn */
+font-weight: bold; /* Tùy chọn: làm chữ đậm hơn */
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #478ad4; /* Màu công tắc khi bật */
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #478ad4;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.copy-button {
+    background-color: #478ad4; /* Màu nút bấm */
+    margin: 0 auto;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px; /* Bo góc */
+    cursor: pointer;
+    width: 85%;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #3a7bc3; /* Màu khi hover */
+}
+
+.copy-button:active {
+    background-color: #2e69a9; /* Màu khi nhấn */
+}
+
+.copy-button:disabled {
+    background-color: #6c757d; /* Màu khi bị vô hiệu hóa */
+    cursor: not-allowed
+}
