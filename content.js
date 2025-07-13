@@ -44,7 +44,7 @@
             const successful = document.execCommand('copy');
             if (successful) {
                 console.log(`[Get HydraX / Abyss vid_id] Copied to clipboard (local): ${text}`);
-                alert(`[Get HydraX / Abyss vid_id]\nĐã sao chép vid_id vào bảng nhớ tạm:${text}`);
+                alert(`[Get HydraX / Abyss vid_id]\nĐã sao chép vid_id vào bảng nhớ tạm: ${text}`); // Đã sửa
             } else {
                 console.error('[Get HydraX / Abyss vid_id] Failed to copy to clipboard locally using execCommand.');
                 alert(`[Get HydraX / Abyss vid_id]\nKhông thể sao chép ID thủ công (execCommand thất bại).`);
@@ -100,13 +100,14 @@
             console.log(`[Get HydraX / Abyss vid_id] Found ${newIdsFound} new short.icu IDs. Total: ${collectedIds.size}`);
             
             // Logic cho chế độ tự động sao chép
-            if (isAutoCopyEnabled && !forceCopyManually) { // Chỉ sao chép tự động nếu bật và không phải là yêu cầu thủ công
+            // Chỉ sao chép tự động nếu bật và không phải là yêu cầu thủ công
+            if (isAutoCopyEnabled && !forceCopyManually) {
                 // Gửi thông điệp đến background script để yêu cầu sao chép tự động
                 chrome.runtime.sendMessage({
                     action: "autoCopyIds",
                     ids: Array.from(collectedIds)
                 });
-                alert(`[Get HydraX / Abyss vid_id]\nĐã sao chép vid_id tự động thành công: ${text}`);
+                // alert(`[Get HydraX / Abyss vid_id]\nĐã sao chép vid_id tự động thành công: ${text}`); // Đã bỏ alert ở đây vì background sẽ gửi lại status
                 console.log('[Get HydraX / Abyss vid_id] Đã gửi ID đến background để yêu cầu sao chép tự động.');
             } else if (!isAutoCopyEnabled && !forceCopyManually) {
                 console.log('[Get HydraX / Abyss vid_id] Chế độ tự động sao chép đang TẮT. Không sao chép tự động.');
