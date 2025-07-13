@@ -76,7 +76,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             chrome.tabs.sendMessage(tabId, {
                 action: "autoCopyStatus",
                 success: false,
-                message: `Không thể tự động sao chép VID_ID. (Lỗi: ${error.message})`
+                message: `Không thể tự động sao chép vid_id. (Lỗi: ${error.message})`
             });
             sendResponse({ status: "copy script injection failed" });
         });

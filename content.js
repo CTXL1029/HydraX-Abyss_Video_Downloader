@@ -65,7 +65,7 @@
         if (collectedIds.size > 0) {
             copyToClipboardLocal(Array.from(collectedIds).join('\n'));
         } else {
-            alert('Không tìm thấy VID_ID nào để sao chép trên trang này.');
+            alert('Không tìm thấy vid_id nào để sao chép trên trang này.');
         }
     }
 
