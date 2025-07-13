@@ -34,9 +34,15 @@ h2 {
     height: 0;
 }
 
+/* Màu nền khi bật */
+.toggle-switch input:checked + .slider {
+    border: none; /* VIỀN KHUNG BIẾN MẤT KHI BẬT */
+    /* Hoặc bạn có thể dùng: border-width: 0; */
+}
+
 .toggle-label {
-font-size: 16px; /* Hoặc 16px, 18px, v.v. tùy theo kích thước bạn muốn */
-font-weight: bold; /* Tùy chọn: làm chữ đậm hơn */
+    font-size: 16px; /* Hoặc 16px, 18px, v.v. tùy theo kích thước bạn muốn */
+    font-weight: bold; /* Tùy chọn: làm chữ đậm hơn */
 }
 
 .slider {
@@ -46,18 +52,20 @@ font-weight: bold; /* Tùy chọn: làm chữ đậm hơn */
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    border: 0.5px solid white;
+    background-color: #cccccc00;
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
 }
+
 .slider:before {
     position: absolute;
     content: "";
     height: 26px;
     width: 26px;
-    left: 4px;
-    bottom: 4px;
+    left: 3.5px; /* Đã điều chỉnh */
+    bottom: 3.5px; /* Đã điều chỉnh */
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -65,11 +73,11 @@ font-weight: bold; /* Tùy chọn: làm chữ đậm hơn */
 }
 
 input:checked + .slider {
-    background-color: #478ad4; /* Màu công tắc khi bật */
+    background-color: #006cbe; /* Màu công tắc khi bật */
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #478ad4;
+    box-shadow: 0 0 1px #006cbe;
 }
 
 input:checked + .slider:before {
@@ -88,7 +96,7 @@ input:checked + .slider:before {
 }
 
 .copy-button {
-    background-color: #478ad4; /* Màu nút bấm */
+    background-color: #006cbe; /* Màu nút bấm */
     margin: 0 auto;
     color: white;
     padding: 10px 20px;
