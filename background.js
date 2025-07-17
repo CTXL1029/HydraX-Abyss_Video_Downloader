@@ -59,7 +59,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             chrome.tabs.sendMessage(tabId, {
                 action: "autoCopyStatus",
                 success: true,
-                message: chrome.i18n.getMessage("autoCopySuccess", [idsToCopy])
+                message: idsToCopy
             });
             sendResponse({ status: "copy script injected" });
         })

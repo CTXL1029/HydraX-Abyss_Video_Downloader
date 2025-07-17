@@ -25,6 +25,14 @@
         return null;
     }
 
+    function showAlertWithPrefix(message, vid) {
+        if (vid !== undefined && vid !== null && vid !== "") {
+            alert(`[Get HydraX / Abyss vid_id]\n${message} ${vid}`);
+        } else {
+            alert(`[Get HydraX / Abyss vid_id]\n${message}`);
+        }
+    }
+
     function copyToClipboardLocal(text) {
         if (!text || text.length === 0) {
             console.warn(chrome.i18n.getMessage("consoleNoIdToCopyLocal"));
@@ -42,14 +50,14 @@
             const successful = document.execCommand('copy');
             if (successful) {
                 console.log(chrome.i18n.getMessage("consoleCopiedToClipboardExecCommand", [text]));
-                alert(`${chrome.i18n.getMessage("copySuccessAlert")}\n${text}`);
+                showAlertWithPrefix(chrome.i18n.getMessage("copySuccessAlert"), text);
             } else {
                 console.error(chrome.i18n.getMessage("consoleFailedToCopyExecCommand"));
-                alert(chrome.i18n.getMessage("copyFailedExecCommand"));
+                showAlertWithPrefix(chrome.i18n.getMessage("copyFailedExecCommand"));
             }
         } catch (err) {
             console.error(chrome.i18n.getMessage("consoleErrorDuringExecCommand"), err);
-            alert(chrome.i18n.getMessage("copyFailedPermission"));
+            showAlertWithPrefix(chrome.i18n.getMessage("copyFailedPermission"));
         } finally {
             document.body.removeChild(textArea);
         }
@@ -61,7 +69,7 @@
         if (collectedIds.size > 0) {
             copyToClipboardLocal(Array.from(collectedIds).join('\n'));
         } else {
-            alert(chrome.i18n.getMessage("noIdFound"));
+            showAlertWithPrefix(chrome.i18n.getMessage("noIdFound"));
         }
     }
 
@@ -113,7 +121,7 @@
         });
     });
 
-    chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    chrome.runtime.onMessage.addListener((request, text, sendResponse) => {
         if (request.action === "updateAutoCopySetting") {
             isAutoCopyEnabled = request.enabled;
             console.log(chrome.i18n.getMessage("autoCopySettingUpdated"), isAutoCopyEnabled);
@@ -127,10 +135,10 @@
             sendResponse({ status: chrome.i18n.getMessage("manualCopyDone") });
         } else if (request.action === "autoCopyStatus") {
             if (request.success) {
-                alert(`${chrome.i18n.getMessage("autoCopySuccess")} ${request.message}`);
+                showAlertWithPrefix(chrome.i18n.getMessage("autoCopySuccess"), request.message);
                 console.log(chrome.i18n.getMessage("autoCopyStatusSuccess"), request.message);
             } else {
-                alert(chrome.i18n.getMessage("autoCopyFailed", [request.message]));
+                showAlertWithPrefix(chrome.i18n.getMessage("autoCopyFailed", [request.message]));
                 console.error(chrome.i18n.getMessage("autoCopyStatusError"), request.message);
             }
         }

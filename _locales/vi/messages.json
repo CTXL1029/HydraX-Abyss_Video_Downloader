@@ -186,5 +186,7 @@
   "noIdFoundOrPageUnsupported": {
     "message": "Không tìm thấy vid_id hoặc trang này không được hỗ trợ."
   },
-  "Credit": "Made by Google Gemini and fixed by @CTXL1029"
+  "Credit": {
+    "message": "Made by Google Gemini and fixed by @CTXL1029"
+  }
 }

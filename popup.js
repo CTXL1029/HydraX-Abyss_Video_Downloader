@@ -1,5 +1,9 @@
 // popup.js Made by Google Gemini with GitHub Copilot and fixed by @CTXL1029
 
+function showAlertWithPrefix(message) {
+    alert(`[Get HydraX / Abyss vid_id]\n${message}`);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('popupTitle').textContent = chrome.i18n.getMessage("popupTitle");
     document.getElementById('autoCopyLabel').textContent = chrome.i18n.getMessage("autoCopyLabel");
@@ -42,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     { action: "manualCopy" },
                     (response) => {
                         if (chrome.runtime.lastError) {
-                            alert(chrome.i18n.getMessage("noIdFoundOrPageUnsupported"));
+                            showAlertWithPrefix(chrome.i18n.getMessage("noIdFoundOrPageUnsupported"));
                             window.close();
                         } else {
                             window.close();
@@ -50,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 );
             } else {
-                alert(chrome.i18n.getMessage("noIdFoundOrPageUnsupported"));
+                showAlertWithPrefix(chrome.i18n.getMessage("noIdFoundOrPageUnsupported"));
                 window.close();
             }
         });
@@ -79,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     console.log(chrome.i18n.getMessage("consoleOpenedKeywordLink"));
                 } else {
                     console.error(chrome.i18n.getMessage("consoleFailedOpenKeywordLink"), response.message);
-                    alert(chrome.i18n.getMessage("failedOpenKeywordLink"));
+                    showAlertWithPrefix(chrome.i18n.getMessage("failedOpenKeywordLink"));
                 }
             });
         }

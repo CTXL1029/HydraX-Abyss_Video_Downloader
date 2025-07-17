@@ -186,5 +186,7 @@
   "noIdFoundOrPageUnsupported": {
     "message": "No vid_id found or this page is not supported."
   },
-  "Credit": "Made by Google Gemini and fixed by @CTXL1029"
+  "Credit": {
+    "message": "Made by Google Gemini and fixed by @CTXL1029"
+  }
 }
