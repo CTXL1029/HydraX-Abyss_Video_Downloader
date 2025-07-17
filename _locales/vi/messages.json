@@ -1,0 +1,190 @@
+{
+  "extensionName": {
+    "message": "Get HydraX / Abyss vid_id",
+    "description": "Tên tiện ích"
+  },
+  "extensionDescription": {
+    "message": "Sao chép tự động hoặc thủ công vid_id từ máy chủ video HydraX / Abyss",
+    "description": "Mô tả tiện ích"
+  },
+  "popupTitle": {
+    "message": "Cài đặt Sao chép vid_id",
+    "description": "Tiêu đề của popup"
+  },
+  "autoCopyLabel": {
+    "message": "Tự động sao chép vid_id:",
+    "description": "Nhãn cho nút chuyển tự động sao chép"
+  },
+  "manualCopyButton": {
+    "message": "Sao chép vid_id ngay",
+    "description": "Văn bản cho nút sao chép thủ công"
+  },
+  "openKeywordLinkButton": {
+    "message": "Mở Liên kết tương ứng",
+    "description": "Văn bản cho nút liên kết từ khóa"
+  },
+  "noIdFound": {
+    "message": "Không tìm thấy vid_id nào để sao chép trên trang này.",
+    "description": "Thông báo khi không tìm thấy ID"
+  },
+  "copySuccessAlert": {
+    "message": "Đã sao chép vid_id vào bảng nhớ tạm:",
+    "description": "Thông báo thành công khi sao chép cục bộ"
+  },
+  "copyFailedExecCommand": {
+    "message": "Không thể sao chép ID thủ công (execCommand thất bại).",
+    "description": "Thông báo lỗi khi sao chép cục bộ execCommand"
+  },
+  "copyFailedPermission": {
+    "message": "Không thể sao chép ID thủ công. Vui lòng cho phép truy cập bảng nhớ tạm.",
+    "description": "Thông báo lỗi khi sao chép cục bộ do quyền"
+  },
+  "autoCopySuccess": {
+    "message": "Đã tự động sao chép vid_id thành công:",
+    "description": "Thông báo thành công khi tự động sao chép (từ background)"
+  },
+  "autoCopyFailed": {
+    "message": "Không thể tự động sao chép vid_id. (Lỗi: %s)",
+    "description": "Thông báo lỗi khi tự động sao chép (từ background)"
+  },
+  "autoCopyOff": {
+    "message": "Chế độ tự động sao chép đang TẮT. Không tự động sao chép.",
+    "description": "Thông báo khi tự động sao chép tắt"
+  },
+  "invalidUrl": {
+    "message": "URL không hợp lệ.",
+    "description": "Thông báo lỗi cho URL không hợp lệ khi mở liên kết từ khóa"
+  },
+  "popupElementNotFound": {
+    "message": "Lỗi: Không tìm thấy phần tử '%s'!",
+    "description": "Lỗi gỡ lỗi khi không tìm thấy phần tử popup"
+  },
+  "failedOpenKeywordLink": {
+    "message": "Không thể mở liên kết từ khóa.",
+    "description": "Thông báo lỗi nếu liên kết từ khóa không mở được"
+  },
+  "autoCopySettingSaved": {
+    "message": "Cài đặt tự động sao chép đã lưu:",
+    "description": "Thông báo console khi cài đặt tự động sao chép được lưu"
+  },
+  "autoCopySettingUpdated": {
+    "message": "Cài đặt tự động sao chép đã cập nhật thành:",
+    "description": "Thông báo console khi cài đặt tự động sao chép được cập nhật"
+  },
+  "manualCopyRequest": {
+    "message": "Yêu cầu sao chép thủ công từ popup.",
+    "description": "Thông báo console cho yêu cầu sao chép thủ công"
+  },
+  "manualCopyDone": {
+    "message": "đã sao chép thủ công",
+    "description": "Thông báo trạng thái hoàn thành sao chép thủ công"
+  },
+  "consoleCopiedToClipboardNavigator": {
+    "message": "Đã sao chép thành công vào clipboard (navigator): %s",
+    "description": "Log console cho sao chép thành công bằng navigator.clipboard"
+  },
+  "consoleFailedToCopyNavigator": {
+    "message": "Không sao chép được bằng navigator.clipboard:",
+    "description": "Log console cho sao chép thất bại bằng navigator.clipboard"
+  },
+  "consoleNavigatorNotAvailable": {
+    "message": "navigator.clipboard.writeText không khả dụng, đang chuyển sang execCommand.",
+    "description": "Log console khi navigator.clipboard không khả dụng"
+  },
+  "consoleErrorWithNavigator": {
+    "message": "Lỗi với navigator.clipboard, đang chuyển sang:",
+    "description": "Log console cho lỗi chung của navigator.clipboard"
+  },
+  "consoleCopiedToClipboardExecCommand": {
+    "message": "Đã sao chép thành công vào clipboard (execCommand): %s",
+    "description": "Log console cho sao chép thành công bằng execCommand"
+  },
+  "consoleFailedToCopyExecCommand": {
+    "message": "Không sao chép được bằng execCommand (trả về false).",
+    "description": "Log console cho sao chép thất bại bằng execCommand"
+  },
+  "consoleErrorDuringExecCommand": {
+    "message": "Lỗi trong quá trình sao chép execCommand:",
+    "description": "Log console cho lỗi trong quá trình sao chép execCommand"
+  },
+  "consoleReceivedAutoCopyRequest": {
+    "message": "Đã nhận yêu cầu tự động sao chép ID từ tab %s:",
+    "description": "Log console cho yêu cầu tự động sao chép đã nhận"
+  },
+  "consoleAutoCopyScriptInjected": {
+    "message": "Script tự động sao chép đã được chèn thành công cho tab %s.",
+    "description": "Log console cho việc chèn script tự động sao chép thành công"
+  },
+  "consoleFailedToInjectAutoCopyScript": {
+    "message": "Không thể chèn script tự động sao chép cho tab %s:",
+    "description": "Log console cho việc chèn script tự động sao chép thất bại"
+  },
+  "consoleExtensionInstalled": {
+    "message": "Tiện ích đã được cài đặt/cập nhật.",
+    "description": "Log console cho việc cài đặt/cập nhật tiện ích"
+  },
+  "consoleKeywordDataLoaded": {
+    "message": "Dữ liệu từ khóa đã được tải và lưu vào storage.",
+    "description": "Log console cho việc tải dữ liệu từ khóa"
+  },
+  "consoleFailedToLoadKeywordData": {
+    "message": "Không thể tải keyword_data.json:",
+    "description": "Log console cho việc tải dữ liệu từ khóa thất bại"
+  },
+  "consoleExtensionStartedUp": {
+    "message": "Tiện ích đã khởi động.",
+    "description": "Log console cho việc khởi động tiện ích"
+  },
+  "consoleKeywordDataReloaded": {
+    "message": "Dữ liệu từ khóa đã được tải lại khi khởi động.",
+    "description": "Log console cho việc tải lại dữ liệu từ khóa khi khởi động"
+  },
+  "consoleCouldNotParseUrl": {
+    "message": "Không thể phân tích cú pháp URL: %s",
+    "description": "Cảnh báo console cho lỗi phân tích cú pháp URL"
+  },
+  "consoleNoIdToCopyLocal": {
+    "message": "Không có ID để sao chép cục bộ.",
+    "description": "Cảnh báo console khi không có ID để sao chép cục bộ"
+  },
+  "consoleFoundNewIds": {
+    "message": "Tìm thấy %s ID short.icu mới. Tổng cộng: %s",
+    "description": "Log console cho việc tìm thấy ID mới"
+  },
+  "consoleIdsSentToBackground": {
+    "message": "Đã gửi ID đến background để yêu cầu tự động sao chép.",
+    "description": "Log console cho ID đã gửi đến background"
+  },
+  "consoleAutoCopyOffMessage": {
+    "message": "Chế độ tự động sao chép đang TẮT. Không tự động sao chép.",
+    "description": "Log console khi tự động sao chép tắt"
+  },
+  "consoleAutoCopySettingInitial": {
+    "message": "Cài đặt tự động sao chép ban đầu từ storage:",
+    "description": "Log console cho cài đặt tự động sao chép ban đầu"
+  },
+  "consolePageLoaded": {
+    "message": "Trang đã tải hoàn tất. Đang thực hiện quét cuối cùng.",
+    "description": "Log console khi trang đã tải hoàn tất"
+  },
+  "consoleOpenedKeywordLink": {
+    "message": "Đã mở liên kết từ khóa thành công.",
+    "description": "Log console khi liên kết từ khóa được mở"
+  },
+  "consoleFailedOpenKeywordLink": {
+    "message": "Không thể mở liên kết từ khóa:",
+    "description": "Log console khi liên kết từ khóa không mở được"
+  },
+  "autoCopyStatusSuccess": {
+    "message": "Trạng thái tự động sao chép thành công:",
+    "description": "Log console cho trạng thái tự động sao chép thành công"
+  },
+  "autoCopyStatusError": {
+    "message": "Lỗi tự động sao chép:",
+    "description": "Log console cho lỗi tự động sao chép"
+  },
+  "noIdFoundOrPageUnsupported": {
+    "message": "Không tìm thấy vid_id hoặc trang này không được hỗ trợ."
+  },
+  "Credit": "Made by Google Gemini and fixed by @CTXL1029"
+}

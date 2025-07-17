@@ -1,0 +1,190 @@
+{
+  "extensionName": {
+    "message": "Get HydraX / Abyss vid_id",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Automatically or manually copies vid_id from HydraX / Abyss video server",
+    "description": "Description of the extension"
+  },
+  "popupTitle": {
+    "message": "vid_id Copier Settings",
+    "description": "Title of the popup"
+  },
+  "autoCopyLabel": {
+    "message": "Auto-copy vid_id:",
+    "description": "Label for auto-copy toggle"
+  },
+  "manualCopyButton": {
+    "message": "Copy vid_id Now",
+    "description": "Text for manual copy button"
+  },
+  "openKeywordLinkButton": {
+    "message": "Open Matched Link",
+    "description": "Text for keyword link button"
+  },
+  "noIdFound": {
+    "message": "No vid_id found to copy on this page.",
+    "description": "Message when no ID is found"
+  },
+  "copySuccessAlert": {
+    "message": "Successfully copied vid_id to clipboard:",
+    "description": "Success message for local copy"
+  },
+  "copyFailedExecCommand": {
+    "message": "Could not manually copy ID (execCommand failed).",
+    "description": "Error message for local copy execCommand"
+  },
+  "copyFailedPermission": {
+    "message": "Could not manually copy ID. Please allow clipboard access.",
+    "description": "Error message for local copy permission"
+  },
+  "autoCopySuccess": {
+    "message": "Successfully auto-copied vid_id:",
+    "description": "Success message for auto-copy (from background)"
+  },
+  "autoCopyFailed": {
+    "message": "Could not auto-copy vid_id. (Error: %s)",
+    "description": "Error message for auto-copy (from background)"
+  },
+  "autoCopyOff": {
+    "message": "Auto-copy is OFF. Not auto-copying.",
+    "description": "Message when auto-copy is off"
+  },
+  "invalidUrl": {
+    "message": "Invalid URL.",
+    "description": "Error message for invalid URL when opening keyword link"
+  },
+  "popupElementNotFound": {
+    "message": "Error: Could not find element '%s'!",
+    "description": "Debugging error when popup element is not found"
+  },
+  "failedOpenKeywordLink": {
+    "message": "Could not open keyword link.",
+    "description": "Error message if keyword link fails to open"
+  },
+  "autoCopySettingSaved": {
+    "message": "Auto-copy setting saved:",
+    "description": "Console message when auto-copy setting is saved"
+  },
+  "autoCopySettingUpdated": {
+    "message": "Auto-copy setting updated to:",
+    "description": "Console message when auto-copy setting is updated"
+  },
+  "manualCopyRequest": {
+    "message": "Manual copy request from popup.",
+    "description": "Console message for manual copy request"
+  },
+  "manualCopyDone": {
+    "message": "manual copy done",
+    "description": "Status message for manual copy completion"
+  },
+  "consoleCopiedToClipboardNavigator": {
+    "message": "Successfully copied to clipboard (navigator): %s",
+    "description": "Console log for successful navigator.clipboard copy"
+  },
+  "consoleFailedToCopyNavigator": {
+    "message": "Failed to copy using navigator.clipboard:",
+    "description": "Console log for failed navigator.clipboard copy"
+  },
+  "consoleNavigatorNotAvailable": {
+    "message": "navigator.clipboard.writeText not available, falling back to execCommand.",
+    "description": "Console log when navigator.clipboard is not available"
+  },
+  "consoleErrorWithNavigator": {
+    "message": "Error with navigator.clipboard, falling back:",
+    "description": "Console log for generic navigator.clipboard error"
+  },
+  "consoleCopiedToClipboardExecCommand": {
+    "message": "Successfully copied to clipboard (execCommand): %s",
+    "description": "Console log for successful execCommand copy"
+  },
+  "consoleFailedToCopyExecCommand": {
+    "message": "Failed to copy using execCommand (returned false).",
+    "description": "Console log for failed execCommand copy"
+  },
+  "consoleErrorDuringExecCommand": {
+    "message": "Error during execCommand copy:",
+    "description": "Console log for error during execCommand copy"
+  },
+  "consoleReceivedAutoCopyRequest": {
+    "message": "Received request to auto-copy IDs from tab %s:",
+    "description": "Console log for received auto-copy request"
+  },
+  "consoleAutoCopyScriptInjected": {
+    "message": "Auto-copy script injected successfully for tab %s.",
+    "description": "Console log for successful auto-copy script injection"
+  },
+  "consoleFailedToInjectAutoCopyScript": {
+    "message": "Failed to inject auto-copy script for tab %s:",
+    "description": "Console log for failed auto-copy script injection"
+  },
+  "consoleExtensionInstalled": {
+    "message": "Extension installed/updated.",
+    "description": "Console log for extension install/update"
+  },
+  "consoleKeywordDataLoaded": {
+    "message": "Keyword data loaded and saved to storage.",
+    "description": "Console log for keyword data loading"
+  },
+  "consoleFailedToLoadKeywordData": {
+    "message": "Failed to load keyword_data.json:",
+    "description": "Console log for failed keyword data load"
+  },
+  "consoleExtensionStartedUp": {
+    "message": "Extension started up.",
+    "description": "Console log for extension startup"
+  },
+  "consoleKeywordDataReloaded": {
+    "message": "Keyword data reloaded on startup.",
+    "description": "Console log for keyword data reload on startup"
+  },
+  "consoleCouldNotParseUrl": {
+    "message": "Could not parse URL: %s",
+    "description": "Console warning for URL parsing error"
+  },
+  "consoleNoIdToCopyLocal": {
+    "message": "No ID to copy locally.",
+    "description": "Console warning when no ID to copy locally"
+  },
+  "consoleFoundNewIds": {
+    "message": "Found %s new short.icu IDs. Total: %s",
+    "description": "Console log for finding new IDs"
+  },
+  "consoleIdsSentToBackground": {
+    "message": "Sent IDs to background to request auto-copy.",
+    "description": "Console log for IDs sent to background"
+  },
+  "consoleAutoCopyOffMessage": {
+    "message": "Auto-copy is OFF. Not auto-copying automatically.",
+    "description": "Console log when auto-copy is off"
+  },
+  "consoleAutoCopySettingInitial": {
+    "message": "Initial auto-copy setting from storage:",
+    "description": "Console log for initial auto-copy setting"
+  },
+  "consolePageLoaded": {
+    "message": "Page loaded completely. Performing final scan.",
+    "description": "Console log when page is fully loaded"
+  },
+  "consoleOpenedKeywordLink": {
+    "message": "Opened keyword link successfully.",
+    "description": "Console log when keyword link is opened"
+  },
+  "consoleFailedOpenKeywordLink": {
+    "message": "Failed to open keyword link:",
+    "description": "Console log when keyword link fails to open"
+  },
+  "autoCopyStatusSuccess": {
+    "message": "Auto-copy status message:",
+    "description": "Console log for auto-copy success status"
+  },
+  "autoCopyStatusError": {
+    "message": "Auto-copy error:",
+    "description": "Console log for auto-copy error status"
+  },
+  "noIdFoundOrPageUnsupported": {
+    "message": "No vid_id found or this page is not supported."
+  },
+  "Credit": "Made by Google Gemini and fixed by @CTXL1029"
+}

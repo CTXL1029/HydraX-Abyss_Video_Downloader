@@ -2,8 +2,8 @@ body {
     font-family: "Mulish", system-ui; /* Made by Google Gemini and fixed by @CTXL1029 */
     width: 300px;
     padding: 15px;
-    background-color: #282a2c; /* Màu nền web */
-    color: #f0f0f0; /* Màu chữ trắng/xám nhạt cho dễ đọc */
+    background-color: #282a2c;
+    color: #f0f0f0;
     margin: 0;
 }
 
@@ -34,15 +34,13 @@ h2 {
     height: 0;
 }
 
-/* Màu nền khi bật */
 .toggle-switch input:checked + .slider {
-    border: none; /* VIỀN KHUNG BIẾN MẤT KHI BẬT */
-    /* Hoặc bạn có thể dùng: border-width: 0; */
+    border: none;
 }
 
 .toggle-label {
-    font-size: 16px; /* Hoặc 16px, 18px, v.v. tùy theo kích thước bạn muốn */
-    font-weight: bold; /* Tùy chọn: làm chữ đậm hơn */
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .slider {
@@ -64,8 +62,8 @@ h2 {
     content: "";
     height: 26px;
     width: 26px;
-    left: 3.5px; /* Đã điều chỉnh */
-    bottom: 3.5px; /* Đã điều chỉnh */
+    left: 3.5px;
+    bottom: 3.5px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -73,7 +71,7 @@ h2 {
 }
 
 input:checked + .slider {
-    background-color: #006cbe; /* Màu công tắc khi bật */
+    background-color: #006cbe;
 }
 
 input:focus + .slider {
@@ -86,7 +84,6 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
     border-radius: 34px;
 }
@@ -96,12 +93,12 @@ input:checked + .slider:before {
 }
 
 .copy-button {
-    background-color: #006cbe; /* Màu nút bấm */
+    background-color: #006cbe;
     margin: 0 auto;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 9px; /* Bo góc */
+    border-radius: 9px;
     cursor: pointer;
     width: 85%;
     font-size: 15px;
@@ -109,14 +106,14 @@ input:checked + .slider:before {
 }
 
 .copy-button:hover {
-    background-color: #3a7bc3; /* Màu khi hover */
+    background-color: #3a7bc3;
 }
 
 .copy-button:active {
-    background-color: #2e69a9; /* Màu khi nhấn */
+    background-color: #2e69a9;
 }
 
 .copy-button:disabled {
-    background-color: #6c757d; /* Màu khi bị vô hiệu hóa */
+    background-color: #6c757d;
     cursor: not-allowed
 }

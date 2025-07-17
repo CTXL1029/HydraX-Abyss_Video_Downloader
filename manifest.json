@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Get HydraX / Abyss vid_id",
-  "version": "1.5",
-  "description": "Automatically or manually copies vid_id from HydraX / Abyss video server | Made by Google Gemini and fixed by @CTXL1029",
+  "name": "__MSG_extensionName__",
+  "version": "2.0",
+  "description": "__MSG_extensionDescription__",
   "permissions": [
     "activeTab",
     "scripting",
@@ -35,10 +35,5 @@
       "run_at": "document_idle"
     }
   ],
-  "web_accessible_resources": [
-    {
-      "resources": ["keyword_data.json"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  "default_locale": "en"
 }
