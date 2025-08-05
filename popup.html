@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>[Get HydraX / Abyss vid_id]</title>
+    <title>[HydraX / Abyss Video Downloader]</title>
     <script src="content.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,14 +11,25 @@
 </head>
 <body>
     <h2 id="popupTitle"></h2>
-    <div class="toggle-container">
-        <span class="toggle-label" id="autoCopyLabel"></span>
-        <label class="toggle-switch">
-            <input type="checkbox" id="autoCopyToggle"> <span class="slider round"></span>
-        </label>
+    <div class="popup-buttons">
+        <button id="openDownloadSiteButton" class="button"></button>
     </div>
-    <button id="manualCopyButton" class="copy-button"></button>
-    <button id="openKeywordLinkButton" class="copy-button" style="display: none; margin-top: 10px;"></button>
+    <div class="advanced-section">
+        <button class="advanced-toggle" id="advancedToggleBtn">
+            <span id="advancedToggleLabel"></span>
+            <span class="arrow" id="advancedArrow">▼</span>
+        </button>
+        <div class="advanced-content" id="advancedContent">
+            <div class="toggle-container">
+                <span class="toggle-label" id="autoCopyLabel"></span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="autoCopyToggle">
+                </label>
+            </div>
+            <button id="manualCopyButton" class="advanced-button"></button>
+            <button id="openKeywordLinkButton" class="advanced-button" style="display: none;"></button>
+        </div>
+    </div>
     <script src="popup.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 body {
-    font-family: "Mulish", system-ui; /* Made by Google Gemini and fixed by @CTXL1029 */
+    font-family: "Mulish", system-ui; /*Made by Google Gemini with GitHub Copilot and fixed by @CTXL1029 */
     width: 300px;
     padding: 15px;
     background-color: #282a2c;
@@ -14,87 +14,17 @@ h2 {
     margin-bottom: 20px;
 }
 
-.toggle-container {
+.popup-buttons {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 12px;
 }
 
-.toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.toggle-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.toggle-switch input:checked + .slider {
-    border: none;
-}
-
-.toggle-label {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 0.5px solid white;
-    background-color: #cccccc00;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 34px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 3.5px;
-    bottom: 3.5px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 50%;
-}
-
-input:checked + .slider {
+.button {
     background-color: #006cbe;
-}
-
-input:focus + .slider {
-    box-shadow: 0 0 1px #006cbe;
-}
-
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-.copy-button {
-    background-color: #006cbe;
-    margin: 0 auto;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -103,17 +33,100 @@ input:checked + .slider:before {
     width: 85%;
     font-size: 15px;
     transition: background-color 0.3s ease;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-.copy-button:hover {
+.advanced-button {
+    background-color: #006cba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    width: 65%;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.button:hover {
     background-color: #3a7bc3;
 }
 
-.copy-button:active {
+.button:active {
     background-color: #2e69a9;
 }
 
-.copy-button:disabled {
+.button:disabled {
     background-color: #6c757d;
-    cursor: not-allowed
+    cursor: not-allowed;
+}
+
+.advanced-section {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.advanced-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #19aaff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0 8px 0;
+    outline: none;
+}
+
+.advanced-toggle:focus {
+    background-color: #22303b;
+}
+
+.arrow {
+    font-size: 18px;
+    margin-left: 8px;
+    transition: transform 0.25s;
+}
+
+.advanced-toggle.expanded .arrow {
+    transform: rotate(180deg);
+}
+
+.advanced-content {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    animation: slideDown 0.20s;
+}
+
+.advanced-content.show {
+    display: flex;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+.toggle-label {
+    font-size: 14px;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
 }

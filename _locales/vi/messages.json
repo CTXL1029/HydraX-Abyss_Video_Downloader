@@ -1,14 +1,14 @@
 {
   "extensionName": {
-    "message": "Get HydraX / Abyss vid_id",
+    "message": "HydraX / Abyss Video Downloader",
     "description": "Tên tiện ích"
   },
   "extensionDescription": {
-    "message": "Sao chép tự động hoặc thủ công vid_id từ máy chủ video HydraX / Abyss",
+    "message": "Tạo và mở trang web tải xuống video chính thức từ máy chủ HydraX / Abyss",
     "description": "Mô tả tiện ích"
   },
   "popupTitle": {
-    "message": "Cài đặt Sao chép vid_id",
+    "message": "HydraX / Abyss Video Downloader",
     "description": "Tiêu đề của popup"
   },
   "autoCopyLabel": {
@@ -185,6 +185,14 @@
   },
   "noIdFoundOrPageUnsupported": {
     "message": "Không tìm thấy vid_id hoặc trang này không được hỗ trợ."
+  },
+    "openDownloadSiteButton": {
+    "message": "Mở Trang Tải Xuống",
+    "description": "Văn bản cho nút mở trang tải xuống"
+  },
+  "vidIdNotFound": {
+    "message": "Không Tìm Thấy vid_id",
+    "description": "Văn bản hiển thị trên nút khi không tìm thấy vid_id"
   },
   "Credit": {
     "message": "Made by Google Gemini and fixed by @CTXL1029"

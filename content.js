@@ -27,9 +27,9 @@
 
     function showAlertWithPrefix(message, vid) {
         if (vid !== undefined && vid !== null && vid !== "") {
-            alert(`[Get HydraX / Abyss vid_id]\n${message} ${vid}`);
+            alert(`[HydraX / Abyss Video Downloader]\n${message} ${vid}`);
         } else {
-            alert(`[Get HydraX / Abyss vid_id]\n${message}`);
+            alert(`[HydraX / Abyss Video Downloader]\n${message}`);
         }
     }
 

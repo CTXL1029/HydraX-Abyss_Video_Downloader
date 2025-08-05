@@ -1,14 +1,14 @@
 {
   "extensionName": {
-    "message": "Get HydraX / Abyss vid_id",
+    "message": "HydraX / Abyss Video Downloader",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Automatically or manually copies vid_id from HydraX / Abyss video server",
+    "message": "Generate and open the official download video website from HydraX / Abyss server",
     "description": "Description of the extension"
   },
   "popupTitle": {
-    "message": "vid_id Copier Settings",
+    "message": "HydraX / Abyss Video Downloader",
     "description": "Title of the popup"
   },
   "autoCopyLabel": {
@@ -185,6 +185,14 @@
   },
   "noIdFoundOrPageUnsupported": {
     "message": "No vid_id found or this page is not supported."
+  },
+    "openDownloadSiteButton": {
+    "message": "Open Download Site",
+    "description": "Text for the button to open the download site"
+  },
+  "vidIdNotFound": {
+    "message": "Vid_id Not Found",
+    "description": "Text displayed on the button when no vid_id is found"
   },
   "Credit": {
     "message": "Made by Google Gemini and fixed by @CTXL1029"
