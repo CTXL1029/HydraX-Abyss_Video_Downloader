@@ -147,7 +147,7 @@
 
     chrome.storage.sync.get('autoCopyEnabled', (data) => {
         isAutoCopyEnabled = (data.autoCopyEnabled === undefined || data.autoCopyEnabled === null) ? true : data.autoCopyEnabled;
-        console.log(chrome.i18n.getMessage("consoleAutoCopySettingInitial"), isAutoCopyEnabled);
+        /*console.log(chrome.i18n.getMessage("consoleAutoCopySettingInitial"), isAutoCopyEnabled);*/
 
         scanAndProcessShortIcuIds();
 
@@ -155,7 +155,7 @@
     });
 
     window.addEventListener('load', () => {
-        console.log(chrome.i18n.getMessage("consolePageLoaded"));
+        /*console.log(chrome.i18n.getMessage("consolePageLoaded"));*/
         scanAndProcessShortIcuIds();
     });
 
